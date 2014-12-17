@@ -1,0 +1,2 @@
+What happens when you initialize a repository? Why do you need to do it?
+Initializing a repository defines that that particular directory is poised to be controlled by version control via git. It does not yet commit anything, but prepares the project for commits, diffs, etc. You need to do this to tell git that this project (directory) is going to be a git repository. 
