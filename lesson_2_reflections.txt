@@ -4,4 +4,17 @@ Initializing a repository defines that that particular directory is poised to be
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is a place to add the files that will be associated with a given commit of a repository. The working directory may contain files that are not part of this commit. This added layer helps the user be certain about what he wants to put into the commit and repository in logical, user-defined chunks.
 
+How can you use the staging area to make sure you have one commit per logical change?
+The 'git diff --staged' and git diff commands can check what changes are made relative to the repo and working directory respectively. This can allow you to add or remove files from the staging area before performing a 'git commit' operation.
 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+If you are trying to implement a new, or alternative approach to the code having a branch to test this out in would be useful. This could involve something like parallelizing the code or implementing an alternative algorithm to solve the problem. Using branches helps by maintaining the continuity of the original, working version while allowing these tangential investigations.
+
+How do the diagrams help you visualize the branch structure?
+Diagrams of the commits help you recognize the relationships (directed graph pointing from a current branch or commit to it's parent) between commits and when versions are unreachable from various branches.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches includes the best features of each and effectively allows the new 'master' version to access the changes from the other branch. This is why it is shown in a graph as having two (or more) parent nodes.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging is faster but more prone to error and for this reason alone manual merges may be preferred. Additionally manual merges requires the developer to more completely understand the changes or differences among the branches.
